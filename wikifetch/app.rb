@@ -2,18 +2,12 @@ require 'nokogiri'
 require 'open-uri'
 require 'fileutils'
 
-=begin
-TODO
-Data formatting
-Beautifying?'
-More user input options in the command line(parse headers, titles, etc.)
-Learn more Ruby
-=end
-
 FileUtils.touch('pbodydata.txt')
+puts "Enter a URL: "
 
 # User Input
 userlink = gets.chomp
+
 
 
 # Takes info from user input parses the html from a url, turns paragraphs into the paragraph bodies
